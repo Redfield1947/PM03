@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PhongMachModelStoreContainer" CdmEntityContainer="PhongMachEntities">
+    <EntitySetMapping Name="BenhAns">
+      <EntityTypeMapping TypeName="PhongMachModel.BenhAn">
+        <MappingFragment StoreEntitySet="BenhAn">
+          <ScalarProperty Name="ID_BenhAn" ColumnName="ID_BenhAn" />
+          <ScalarProperty Name="ID_BenhNhan" ColumnName="ID_BenhNhan" />
+          <ScalarProperty Name="TrieuChung" ColumnName="TrieuChung" />
+          <ScalarProperty Name="ChuanDoan" ColumnName="ChuanDoan" />
+          <ScalarProperty Name="ID_donThuoc" ColumnName="ID_donThuoc" />
+          <ScalarProperty Name="ngayKham" ColumnName="ngayKham" />
+          <ScalarProperty Name="Date_Created" ColumnName="Date_Created" />
+          <ScalarProperty Name="Date_Edited" ColumnName="Date_Edited" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BenhNhans">
+      <EntityTypeMapping TypeName="PhongMachModel.BenhNhan">
+        <MappingFragment StoreEntitySet="BenhNhan">
+          <ScalarProperty Name="ID_BenhNhan" ColumnName="ID_BenhNhan" />
+          <ScalarProperty Name="ten_BenhNhan" ColumnName="ten_BenhNhan" />
+          <ScalarProperty Name="gioi_Tinh" ColumnName="gioi_Tinh" />
+          <ScalarProperty Name="ngaySinh" ColumnName="ngaySinh" />
+          <ScalarProperty Name="diaChi" ColumnName="diaChi" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="ID_LoaiKhachHang" ColumnName="ID_LoaiKhachHang" />
+          <ScalarProperty Name="Date_Created" ColumnName="Date_Created" />
+          <ScalarProperty Name="Date_Edited" ColumnName="Date_Edited" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChiTietDonThuocs">
+      <EntityTypeMapping TypeName="PhongMachModel.ChiTietDonThuoc">
+        <MappingFragment StoreEntitySet="ChiTietDonThuoc">
+          <ScalarProperty Name="ID_Thuoc" ColumnName="ID_Thuoc" />
+          <ScalarProperty Name="ID_DonThuoc" ColumnName="ID_DonThuoc" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="Ghi_Chu" ColumnName="Ghi_Chu" />
+          <ScalarProperty Name="Date_Created" ColumnName="Date_Created" />
+          <ScalarProperty Name="Date_Edited" ColumnName="Date_Edited" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CTHDs">
+      <EntityTypeMapping TypeName="PhongMachModel.CTHD">
+        <MappingFragment StoreEntitySet="CTHD">
+          <ScalarProperty Name="ID_HoaDon" ColumnName="ID_HoaDon" />
+          <ScalarProperty Name="ID_Thuoc" ColumnName="ID_Thuoc" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="tongCong" ColumnName="tongCong" />
+          <ScalarProperty Name="Date_Created" ColumnName="Date_Created" />
+          <ScalarProperty Name="Date_Edited" ColumnName="Date_Edited" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DinhNghiaGiaTris">
+      <EntityTypeMapping TypeName="PhongMachModel.DinhNghiaGiaTri">
+        <MappingFragment StoreEntitySet="DinhNghiaGiaTri">
+          <ScalarProperty Name="ID_DinhNghiaGiaTri" ColumnName="ID_DinhNghiaGiaTri" />
+          <ScalarProperty Name="tenDinhNghia" ColumnName="tenDinhNghia" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="Date_Created" ColumnName="Date_Created" />
+          <ScalarProperty Name="Date_Edited" ColumnName="Date_Edited" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DonThuocs">
+      <EntityTypeMapping TypeName="PhongMachModel.DonThuoc">
+        <MappingFragment StoreEntitySet="DonThuoc">
+          <ScalarProperty Name="ID_donthuoc" ColumnName="ID_donthuoc" />
+          <ScalarProperty Name="ngayCapThuoc" ColumnName="ngayCapThuoc" />
+          <ScalarProperty Name="Date_Created" ColumnName="Date_Created" />
+          <ScalarProperty Name="Date_Edited" ColumnName="Date_Edited" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GiaTriMacDinhs">
+      <EntityTypeMapping TypeName="PhongMachModel.GiaTriMacDinh">
+        <MappingFragment StoreEntitySet="GiaTriMacDinh">
+          <ScalarProperty Name="ID_GiaTri" ColumnName="ID_GiaTri" />
+          <ScalarProperty Name="GiaTri" ColumnName="GiaTri" />
+          <ScalarProperty Name="ID_DinhNghiaGiaTri" ColumnName="ID_DinhNghiaGiaTri" />
+          <ScalarProperty Name="Date_Created" ColumnName="Date_Created" />
+          <ScalarProperty Name="Date_Edited" ColumnName="Date_Edited" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HoaDons">
+      <EntityTypeMapping TypeName="PhongMachModel.HoaDon">
+        <MappingFragment StoreEntitySet="HoaDon">
+          <ScalarProperty Name="ID_HoaDon" ColumnName="ID_HoaDon" />
+          <ScalarProperty Name="ID_BenhNhan" ColumnName="ID_BenhNhan" />
+          <ScalarProperty Name="ID_LichKham" ColumnName="ID_LichKham" />
+          <ScalarProperty Name="NgayLap" ColumnName="NgayLap" />
+          <ScalarProperty Name="GiaTriHoaDon" ColumnName="GiaTriHoaDon" />
+          <ScalarProperty Name="Date_Created" ColumnName="Date_Created" />
+          <ScalarProperty Name="Date_Edited" ColumnName="Date_Edited" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LichKhams">
+      <EntityTypeMapping TypeName="PhongMachModel.LichKham">
+        <MappingFragment StoreEntitySet="LichKham">
+          <ScalarProperty Name="ID_LichKham" ColumnName="ID_LichKham" />
+          <ScalarProperty Name="ID_KhachHang" ColumnName="ID_KhachHang" />
+          <ScalarProperty Name="NgayKham" ColumnName="NgayKham" />
+          <ScalarProperty Name="ID_PhiKhamBenh" ColumnName="ID_PhiKhamBenh" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="IsComplete" ColumnName="IsComplete" />
+          <ScalarProperty Name="Date_Created" ColumnName="Date_Created" />
+          <ScalarProperty Name="Date_Edited" ColumnName="Date_Edited" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NguoiDungs">
+      <EntityTypeMapping TypeName="PhongMachModel.NguoiDung">
+        <MappingFragment StoreEntitySet="NguoiDung">
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="pass" ColumnName="pass" />
+          <ScalarProperty Name="ID_role" ColumnName="ID_role" />
+          <ScalarProperty Name="Date_Created" ColumnName="Date_Created" />
+          <ScalarProperty Name="Date_Edited" ColumnName="Date_Edited" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="PhongMachModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Thuocs">
+      <EntityTypeMapping TypeName="PhongMachModel.Thuoc">
+        <MappingFragment StoreEntitySet="Thuoc">
+          <ScalarProperty Name="ID_Thuoc" ColumnName="ID_Thuoc" />
+          <ScalarProperty Name="tenThuoc" ColumnName="tenThuoc" />
+          <ScalarProperty Name="loaiThuoc" ColumnName="loaiThuoc" />
+          <ScalarProperty Name="soLuongTon" ColumnName="soLuongTon" />
+          <ScalarProperty Name="donGia" ColumnName="donGia" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="Date_Created" ColumnName="Date_Created" />
+          <ScalarProperty Name="Date_Edited" ColumnName="Date_Edited" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

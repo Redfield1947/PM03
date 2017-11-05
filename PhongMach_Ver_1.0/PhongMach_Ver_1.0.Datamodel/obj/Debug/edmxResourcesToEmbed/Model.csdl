@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PhongMachModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="BenhAn">
+    <Key>
+      <PropertyRef Name="ID_BenhAn" />
+    </Key>
+    <Property Name="ID_BenhAn" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_BenhNhan" Type="Int32" Nullable="false" />
+    <Property Name="TrieuChung" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ChuanDoan" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ID_donThuoc" Type="Int32" Nullable="false" />
+    <Property Name="ngayKham" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Date_Created" Type="DateTime" Precision="3" />
+    <Property Name="Date_Edited" Type="DateTime" Precision="3" />
+    <Property Name="IsDelete" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BenhNhan">
+    <Key>
+      <PropertyRef Name="ID_BenhNhan" />
+    </Key>
+    <Property Name="ID_BenhNhan" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ten_BenhNhan" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="gioi_Tinh" Type="String" MaxLength="5" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ngaySinh" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="diaChi" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SDT" Type="String" MaxLength="11" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ID_LoaiKhachHang" Type="Int32" Nullable="false" />
+    <Property Name="Date_Created" Type="DateTime" Precision="3" />
+    <Property Name="Date_Edited" Type="DateTime" Precision="3" />
+    <Property Name="IsDelete" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ChiTietDonThuoc">
+    <Key>
+      <PropertyRef Name="ID_Thuoc" />
+      <PropertyRef Name="ID_DonThuoc" />
+    </Key>
+    <Property Name="ID_Thuoc" Type="Int32" Nullable="false" />
+    <Property Name="ID_DonThuoc" Type="Int32" Nullable="false" />
+    <Property Name="SoLuong" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Ghi_Chu" Type="String" MaxLength="400" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Date_Created" Type="DateTime" Precision="3" />
+    <Property Name="Date_Edited" Type="DateTime" Precision="3" />
+    <Property Name="IsDelete" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CTHD">
+    <Key>
+      <PropertyRef Name="ID_HoaDon" />
+      <PropertyRef Name="ID_Thuoc" />
+    </Key>
+    <Property Name="ID_HoaDon" Type="Int32" Nullable="false" />
+    <Property Name="ID_Thuoc" Type="Int32" Nullable="false" />
+    <Property Name="SoLuong" Type="Int32" Nullable="false" />
+    <Property Name="tongCong" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Date_Created" Type="DateTime" Precision="3" />
+    <Property Name="Date_Edited" Type="DateTime" Precision="3" />
+    <Property Name="IsDelete" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DinhNghiaGiaTri">
+    <Key>
+      <PropertyRef Name="ID_DinhNghiaGiaTri" />
+    </Key>
+    <Property Name="ID_DinhNghiaGiaTri" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tenDinhNghia" Type="String" MaxLength="5" FixedLength="false" Unicode="true" />
+    <Property Name="GhiChu" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Date_Created" Type="DateTime" Precision="3" />
+    <Property Name="Date_Edited" Type="DateTime" Precision="3" />
+    <Property Name="IsDelete" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GiaTriMacDinh">
+    <Key>
+      <PropertyRef Name="ID_GiaTri" />
+    </Key>
+    <Property Name="ID_GiaTri" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GiaTri" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ID_DinhNghiaGiaTri" Type="Int32" Nullable="false" />
+    <Property Name="Date_Created" Type="DateTime" Precision="3" />
+    <Property Name="Date_Edited" Type="DateTime" Precision="3" />
+    <Property Name="IsDelete" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HoaDon">
+    <Key>
+      <PropertyRef Name="ID_HoaDon" />
+    </Key>
+    <Property Name="ID_HoaDon" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_BenhNhan" Type="Int32" Nullable="false" />
+    <Property Name="ID_LichKham" Type="Int32" Nullable="false" />
+    <Property Name="NgayLap" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="GiaTriHoaDon" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Date_Created" Type="DateTime" Precision="3" />
+    <Property Name="Date_Edited" Type="DateTime" Precision="3" />
+    <Property Name="IsDelete" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LichKham">
+    <Key>
+      <PropertyRef Name="ID_LichKham" />
+    </Key>
+    <Property Name="ID_LichKham" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_KhachHang" Type="Int32" Nullable="false" />
+    <Property Name="NgayKham" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ID_PhiKhamBenh" Type="Int32" Nullable="false" />
+    <Property Name="GhiChu" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IsComplete" Type="Boolean" />
+    <Property Name="Date_Created" Type="DateTime" Precision="3" />
+    <Property Name="Date_Edited" Type="DateTime" Precision="3" />
+    <Property Name="IsDelete" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NguoiDung">
+    <Key>
+      <PropertyRef Name="username" />
+    </Key>
+    <Property Name="username" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="pass" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ID_role" Type="Int32" Nullable="false" />
+    <Property Name="Date_Created" Type="DateTime" Precision="3" />
+    <Property Name="Date_Edited" Type="DateTime" Precision="3" />
+    <Property Name="IsDelete" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Thuoc">
+    <Key>
+      <PropertyRef Name="ID_Thuoc" />
+    </Key>
+    <Property Name="ID_Thuoc" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tenThuoc" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="loaiThuoc" Type="Int32" Nullable="false" />
+    <Property Name="soLuongTon" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="donGia" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="GhiChu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Date_Created" Type="DateTime" Precision="3" />
+    <Property Name="Date_Edited" Type="DateTime" Precision="3" />
+    <Property Name="IsDelete" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="PhongMachEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="BenhAns" EntityType="Self.BenhAn" />
+    <EntitySet Name="BenhNhans" EntityType="Self.BenhNhan" />
+    <EntitySet Name="ChiTietDonThuocs" EntityType="Self.ChiTietDonThuoc" />
+    <EntitySet Name="CTHDs" EntityType="Self.CTHD" />
+    <EntitySet Name="DinhNghiaGiaTris" EntityType="Self.DinhNghiaGiaTri" />
+    <EntitySet Name="GiaTriMacDinhs" EntityType="Self.GiaTriMacDinh" />
+    <EntitySet Name="HoaDons" EntityType="Self.HoaDon" />
+    <EntitySet Name="LichKhams" EntityType="Self.LichKham" />
+    <EntitySet Name="NguoiDungs" EntityType="Self.NguoiDung" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="Thuocs" EntityType="Self.Thuoc" />
+  </EntityContainer>
+</Schema>

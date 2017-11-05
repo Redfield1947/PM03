@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style="text-align:center">Định Nghĩa Quy Định</h2>
+<div ng-app="KendoDemos" ng-controller="MyCtrl">
+    @*<div style="margin-bottom:7px">
+        <kendo-button type="button" class="btn btn-primary" id="btnThem" ng-click="CreateData()">Thêm</kendo-button>&nbsp;
+    </div>*@
+    @*<div id="CreateDinhNghia" style="display: none">
+        @Html.Partial("CreateDinhNghiaGiaTri")
+    </div>*@
+    <div class="container-fluid content">
+        <div id="grid"></div>
+    </div>
+    <div id="windowConfirm">
+        <div id="messageConfirm" style="padding:0px 5px; min-height: 40px;"></div>
+        <div style="text-align: center;">
+            <button class="k-button delete-confirm" id="yesButton">Đồng ý</button>
+            &nbsp;&nbsp;&nbsp;
+            <button class="k-button delete-cancel" id="noButton"> Hủy bỏ</button>
+        </div>
+    </div>
+   <script type="text/x-kendo-template" id="toolBarTemplate">
+    </script>
+    <script src="~/Scripts/View/DinhNghiaGiaTri.js"></script>
+</div>
+
+

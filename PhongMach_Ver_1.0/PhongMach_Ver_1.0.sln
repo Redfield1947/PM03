@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhongMach_Ver_1.0.Web", "PhongMach_Ver_1.0.Web\PhongMach_Ver_1.0.Web.csproj", "{B4C49EC4-8E3B-428B-A63A-90D28F956E48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhongMach_Ver_1.0.Entities", "PhongMach_Ver_1.0.Entities\PhongMach_Ver_1.0.Entities.csproj", "{05391A7F-A081-40C9-AD25-76EB6D49B5D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhongMach_Ver_1.0.Datamodel", "PhongMach_Ver_1.0.Datamodel\PhongMach_Ver_1.0.Datamodel.csproj", "{59FA0176-8072-42F7-8173-26934BB70BB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhongMach_Ver_1.0.Services", "PhongMach_Ver_1.0.Services\PhongMach_Ver_1.0.Services.csproj", "{1A2CF8C0-FF51-43F8-B86A-0F3F3E0CB7FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhongMach_Ver_1.0.Models", "PhongMach_Ver_1.0.Models\PhongMach_Ver_1.0.Models.csproj", "{ECCCE605-965A-434E-9AA1-019C0A561ACE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4C49EC4-8E3B-428B-A63A-90D28F956E48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4C49EC4-8E3B-428B-A63A-90D28F956E48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4C49EC4-8E3B-428B-A63A-90D28F956E48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4C49EC4-8E3B-428B-A63A-90D28F956E48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05391A7F-A081-40C9-AD25-76EB6D49B5D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05391A7F-A081-40C9-AD25-76EB6D49B5D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05391A7F-A081-40C9-AD25-76EB6D49B5D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05391A7F-A081-40C9-AD25-76EB6D49B5D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59FA0176-8072-42F7-8173-26934BB70BB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59FA0176-8072-42F7-8173-26934BB70BB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59FA0176-8072-42F7-8173-26934BB70BB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59FA0176-8072-42F7-8173-26934BB70BB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A2CF8C0-FF51-43F8-B86A-0F3F3E0CB7FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A2CF8C0-FF51-43F8-B86A-0F3F3E0CB7FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A2CF8C0-FF51-43F8-B86A-0F3F3E0CB7FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A2CF8C0-FF51-43F8-B86A-0F3F3E0CB7FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECCCE605-965A-434E-9AA1-019C0A561ACE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECCCE605-965A-434E-9AA1-019C0A561ACE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECCCE605-965A-434E-9AA1-019C0A561ACE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECCCE605-965A-434E-9AA1-019C0A561ACE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

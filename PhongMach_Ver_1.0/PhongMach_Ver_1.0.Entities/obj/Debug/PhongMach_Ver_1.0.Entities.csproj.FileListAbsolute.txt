@@ -1,0 +1,10 @@
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Entities\bin\Debug\AutoMapper.Net4.dll
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Entities\bin\Debug\PhongMach_Ver_1.0.Entities.dll
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Entities\bin\Debug\PhongMach_Ver_1.0.Entities.pdb
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Entities\bin\Debug\AutoMapper.dll
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Entities\bin\Debug\AutoMapper.pdb
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Entities\bin\Debug\AutoMapper.xml
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Entities\bin\Debug\AutoMapper.Net4.pdb
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Entities\obj\Debug\PhongMach_Ver_1.0.Entities.csprojResolveAssemblyReference.cache
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Entities\obj\Debug\PhongMach_Ver_1.0.Entities.dll
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Entities\obj\Debug\PhongMach_Ver_1.0.Entities.pdb

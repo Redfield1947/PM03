@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PhongMachModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="BenhAn">
+    <Key>
+      <PropertyRef Name="ID_BenhAn" />
+    </Key>
+    <Property Name="ID_BenhAn" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_BenhNhan" Type="int" Nullable="false" />
+    <Property Name="TrieuChung" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="ChuanDoan" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="ID_donThuoc" Type="int" Nullable="false" />
+    <Property Name="ngayKham" Type="datetime" Nullable="false" />
+    <Property Name="Date_Created" Type="datetime" />
+    <Property Name="Date_Edited" Type="datetime" />
+    <Property Name="IsDelete" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BenhNhan">
+    <Key>
+      <PropertyRef Name="ID_BenhNhan" />
+    </Key>
+    <Property Name="ID_BenhNhan" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ten_BenhNhan" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="gioi_Tinh" Type="nvarchar" MaxLength="5" Nullable="false" />
+    <Property Name="ngaySinh" Type="datetime" Nullable="false" />
+    <Property Name="diaChi" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="SDT" Type="nvarchar" MaxLength="11" Nullable="false" />
+    <Property Name="ID_LoaiKhachHang" Type="int" Nullable="false" />
+    <Property Name="Date_Created" Type="datetime" />
+    <Property Name="Date_Edited" Type="datetime" />
+    <Property Name="IsDelete" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ChiTietDonThuoc">
+    <Key>
+      <PropertyRef Name="ID_Thuoc" />
+      <PropertyRef Name="ID_DonThuoc" />
+    </Key>
+    <Property Name="ID_Thuoc" Type="int" Nullable="false" />
+    <Property Name="ID_DonThuoc" Type="int" Nullable="false" />
+    <Property Name="SoLuong" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Ghi_Chu" Type="nvarchar" MaxLength="400" Nullable="false" />
+    <Property Name="Date_Created" Type="datetime" />
+    <Property Name="Date_Edited" Type="datetime" />
+    <Property Name="IsDelete" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CTHD">
+    <Key>
+      <PropertyRef Name="ID_HoaDon" />
+      <PropertyRef Name="ID_Thuoc" />
+    </Key>
+    <Property Name="ID_HoaDon" Type="int" Nullable="false" />
+    <Property Name="ID_Thuoc" Type="int" Nullable="false" />
+    <Property Name="SoLuong" Type="int" Nullable="false" />
+    <Property Name="tongCong" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Date_Created" Type="datetime" />
+    <Property Name="Date_Edited" Type="datetime" />
+    <Property Name="IsDelete" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DinhNghiaGiaTri">
+    <Key>
+      <PropertyRef Name="ID_DinhNghiaGiaTri" />
+    </Key>
+    <Property Name="ID_DinhNghiaGiaTri" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tenDinhNghia" Type="nvarchar" MaxLength="5" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="100" />
+    <Property Name="Date_Created" Type="datetime" />
+    <Property Name="Date_Edited" Type="datetime" />
+    <Property Name="IsDelete" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GiaTriMacDinh">
+    <Key>
+      <PropertyRef Name="ID_GiaTri" />
+    </Key>
+    <Property Name="ID_GiaTri" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GiaTri" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ID_DinhNghiaGiaTri" Type="int" Nullable="false" />
+    <Property Name="Date_Created" Type="datetime" />
+    <Property Name="Date_Edited" Type="datetime" />
+    <Property Name="IsDelete" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HoaDon">
+    <Key>
+      <PropertyRef Name="ID_HoaDon" />
+    </Key>
+    <Property Name="ID_HoaDon" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_BenhNhan" Type="int" Nullable="false" />
+    <Property Name="ID_LichKham" Type="int" Nullable="false" />
+    <Property Name="NgayLap" Type="datetime" Nullable="false" />
+    <Property Name="GiaTriHoaDon" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="Date_Created" Type="datetime" />
+    <Property Name="Date_Edited" Type="datetime" />
+    <Property Name="IsDelete" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LichKham">
+    <Key>
+      <PropertyRef Name="ID_LichKham" />
+    </Key>
+    <Property Name="ID_LichKham" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_KhachHang" Type="int" Nullable="false" />
+    <Property Name="NgayKham" Type="datetime" Nullable="false" />
+    <Property Name="ID_PhiKhamBenh" Type="int" Nullable="false" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="100" />
+    <Property Name="IsComplete" Type="bit" />
+    <Property Name="Date_Created" Type="datetime" />
+    <Property Name="Date_Edited" Type="datetime" />
+    <Property Name="IsDelete" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NguoiDung">
+    <Key>
+      <PropertyRef Name="username" />
+    </Key>
+    <Property Name="username" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="pass" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ID_role" Type="int" Nullable="false" />
+    <Property Name="Date_Created" Type="datetime" />
+    <Property Name="Date_Edited" Type="datetime" />
+    <Property Name="IsDelete" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Thuoc">
+    <Key>
+      <PropertyRef Name="ID_Thuoc" />
+    </Key>
+    <Property Name="ID_Thuoc" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tenThuoc" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="loaiThuoc" Type="int" Nullable="false" />
+    <Property Name="soLuongTon" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="donGia" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Date_Created" Type="datetime" />
+    <Property Name="Date_Edited" Type="datetime" />
+    <Property Name="IsDelete" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="PhongMachModelStoreContainer">
+    <EntitySet Name="BenhAn" EntityType="Self.BenhAn" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BenhNhan" EntityType="Self.BenhNhan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ChiTietDonThuoc" EntityType="Self.ChiTietDonThuoc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CTHD" EntityType="Self.CTHD" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DinhNghiaGiaTri" EntityType="Self.DinhNghiaGiaTri" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GiaTriMacDinh" EntityType="Self.GiaTriMacDinh" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HoaDon" EntityType="Self.HoaDon" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LichKham" EntityType="Self.LichKham" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NguoiDung" EntityType="Self.NguoiDung" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Thuoc" EntityType="Self.Thuoc" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

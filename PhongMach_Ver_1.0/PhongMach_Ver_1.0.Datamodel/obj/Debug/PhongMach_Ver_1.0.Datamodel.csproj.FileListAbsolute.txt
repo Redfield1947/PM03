@@ -1,0 +1,15 @@
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Datamodel\bin\Debug\AutoMapper.Net4.dll
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Datamodel\bin\Debug\PhongMach_Ver_1.0.Datamodel.dll.config
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Datamodel\bin\Debug\PhongMach_Ver_1.0.Datamodel.dll
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Datamodel\bin\Debug\PhongMach_Ver_1.0.Datamodel.pdb
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Datamodel\bin\Debug\AutoMapper.dll
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Datamodel\bin\Debug\EntityFramework.dll
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Datamodel\bin\Debug\EntityFramework.SqlServer.dll
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Datamodel\bin\Debug\AutoMapper.pdb
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Datamodel\bin\Debug\AutoMapper.xml
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Datamodel\bin\Debug\AutoMapper.Net4.pdb
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Datamodel\bin\Debug\EntityFramework.xml
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Datamodel\bin\Debug\EntityFramework.SqlServer.xml
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Datamodel\obj\Debug\PhongMach_Ver_1.0.Datamodel.csprojResolveAssemblyReference.cache
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Datamodel\obj\Debug\PhongMach_Ver_1.0.Datamodel.dll
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Datamodel\obj\Debug\PhongMach_Ver_1.0.Datamodel.pdb

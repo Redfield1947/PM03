@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style="text-align:center">Tủ Thuốc</h2>
+<div ng-app="KendoDemos" ng-controller="MyCtrl">
+    <div style="margin-bottom:7px">
+        
+       
+        <label class="DonVi-label" for="DonVi" style="margin-left:30px">Tên khách hàng: </label>
+        <input type="text" id="txtTenKH" name="txtTenKH" class="k-textbox ng-pristine ng-valid k-valid ng-touched" style="width:100%" ng-model="itemSearch.TenKhachHang" />
+        <kendo-button type="button" class="btn btn-primary" id="btnLoc" ng-click="LocLichHen()" style="margin-right:80px">Lọc</kendo-button>&nbsp;
+        <kendo-button type="button" class="btn btn-primary" id="btnThem" ng-click="ThemLichHen()">Thêm</kendo-button>&nbsp;
+        <kendo-button type="button" class="btn btn-primary" id="btnExcel" ng-click="ExportExcel()">Export</kendo-button>&nbsp;
+        <kendo-button type="button" class="btn btn-primary" id="btnImport" ng-click="ImportExcel()">Import</kendo-button>&nbsp;
+    </div>
+    <div id="CreateThuoc" style="display: none">
+        @Html.Partial("CreateLichHen")
+    </div>
+    <div class="container-fluid content">
+        <div id="grid"></div>
+    </div>
+
+    <script type="text/x-kendo-template" id="toolBarTemplate">
+    </script>
+    <script src="~/Scripts/View/LichHen.js"></script>
+</div>
+
+

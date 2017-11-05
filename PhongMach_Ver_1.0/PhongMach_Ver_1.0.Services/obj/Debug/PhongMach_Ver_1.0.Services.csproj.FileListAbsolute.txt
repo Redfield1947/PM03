@@ -1,0 +1,16 @@
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Services\bin\Debug\AutoMapper.Net4.dll
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Services\bin\Debug\PhongMach_Ver_1.0.Services.dll
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Services\bin\Debug\PhongMach_Ver_1.0.Services.pdb
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Services\bin\Debug\AutoMapper.dll
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Services\bin\Debug\PhongMach_Ver_1.0.Datamodel.dll
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Services\bin\Debug\PhongMach_Ver_1.0.Entities.dll
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Services\bin\Debug\EntityFramework.dll
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Services\bin\Debug\PhongMach_Ver_1.0.Datamodel.pdb
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Services\bin\Debug\PhongMach_Ver_1.0.Entities.pdb
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Services\bin\Debug\AutoMapper.pdb
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Services\bin\Debug\AutoMapper.xml
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Services\bin\Debug\AutoMapper.Net4.pdb
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Services\bin\Debug\EntityFramework.xml
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Services\obj\Debug\PhongMach_Ver_1.0.Services.csprojResolveAssemblyReference.cache
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Services\obj\Debug\PhongMach_Ver_1.0.Services.dll
+D:\MVC project\Phòng Mạch Webite Management\PhongMach_Ver_1.0\PhongMach_Ver_1.0.Services\obj\Debug\PhongMach_Ver_1.0.Services.pdb
